@@ -34,7 +34,6 @@ public class HelloWord {
 
         int edadPersona = 5;
 
-
     }
 
 }
