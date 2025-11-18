@@ -31,7 +31,8 @@ public class Primitivos {
         
         var numeroVar = 127;
         System.out.println("numeroVar = " + numeroVar);
-        
+
+
         
         
         
