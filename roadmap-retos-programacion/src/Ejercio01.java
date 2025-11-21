@@ -31,6 +31,8 @@ public class Ejercio01 {
         System.out.println(num1 + " % " + num2 + " = " + (num1 % num2));
         System.out.println("El % (modulo) es para obtener el residuo de una operacion ");
 
+        System.out.println();
+
     }// end method
 
     public static void operadoresLogicos(){
