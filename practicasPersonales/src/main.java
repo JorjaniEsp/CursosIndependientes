@@ -12,7 +12,7 @@ public class main {
         //pr.pract9();
         //pr.pract10();
         //pr.pract11();
-        pr.pract12();
+        //pr.pract12();
         //pr.pract13();
         //pr.pract14();
         //pr.pract15();

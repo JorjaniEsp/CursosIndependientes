@@ -113,7 +113,7 @@ public class EstructurasDeControl {
         int edad;
         boolean tieneBoleto = false;
         boolean tienePermiso = false;
-        
+
         System.out.println("Ingrese la edad: ");
         edad = sc.nextInt();
         sc.nextLine();
@@ -257,7 +257,25 @@ public class EstructurasDeControl {
     }// end method
 
     public void pract14() {
+        int nota;
+        System.out.println("Ingrese la nota: ");
+        nota = sc.nextInt();
 
+        if(nota >= 90 && nota <= 100){
+            System.out.println("Obtienes una A");
+        } else if (nota >= 80 && nota <= 89) {
+            System.out.println("Obtienes una B");
+        } else if (nota >= 70 && nota <= 79) {
+            System.out.println("Obtienes una C");
+        } else if (nota >= 60 && nota <= 69) {
+            System.out.println("Obtienes una D");
+        } else if (nota >= 0 && nota < 60) {
+            System.out.println("Obtienes un F");
+        } else {
+            System.out.println("Error: la nota debe ser mayor o igual a 0 y menor o igual a 100");
+        }
+
+        sc.close();
     }
 
 }
