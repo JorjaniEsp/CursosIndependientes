@@ -278,4 +278,18 @@ public class EstructurasDeControl {
         sc.close();
     }
 
+    public void pract15(){
+        int ano;
+        System.out.println("Ingrese el año: ");
+        ano = sc.nextInt();
+
+       if (ano % 4 == 0 && (ano % 100 != 0 || ano % 400 == 0)){
+           System.out.println("El año es bisiesto");
+       } else {
+           System.out.println("El año no es bisiesto");
+       }
+       sc.close();
+
+    }
+
 }
