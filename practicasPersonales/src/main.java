@@ -25,7 +25,7 @@ public class main {
         //p.prac5();
         //p.prac6();
         //p.prac7();
-        p.prac8();
+        //p.prac8();
         //p.prac9();
         //p.prac10();
     }

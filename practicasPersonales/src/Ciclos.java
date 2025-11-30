@@ -1,3 +1,4 @@
+import java.time.LocalTime;
 import java.util.Scanner;
 
 public class Ciclos {
@@ -76,19 +77,53 @@ public class Ciclos {
     }// end method
 
     public void prac8(){
-        
-    }
-
-    /*public void prac8() throws InterruptedException {
-        int min = 0, second = 0;
-        for(int i = 0; i <2; i++){
-            System.out.printf("\r%02d",i);
-            Thread.sleep(1);
+        for(int i = 0; i < 2; i++){
             for (int j = 0; j < 60; j++){
-                System.out.printf(":" + "\r%02d", j);
-                Thread.sleep(100);
+                if( j < 10){
+                    System.out.println("0" + i + ":" + "0"+j);
+                } else {
+                    System.out.println( "0"+i + ":" + j);
+                }
             }// end for interno
         }// end for externo
-    }*/
+    }// end method
+
+    public void prac9(){
+        int n;
+        System.out.println("Ingrese un numero: ");
+        n = sc.nextInt();
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j < n; j++) {
+                System.out.print("*");
+            }// end for internal
+            System.out.println(" ");
+        }// end for external
+    }// end method
+
+    public void prac10() {
+        int num;
+        LocalTime horaio = LocalTime.now();
+        int hora = horaio.getHour(), min = horaio.getMinute();
+        do {
+            System.out.println("Ingrese una de las siguientes opciones: \n ");
+            System.out.println("1. Saludar\n2. Decir la hora\n3. SALIR");
+            num = sc.nextInt();
+            switch (num){
+                case 1:
+                    System.out.println("Hola!");
+                    break;
+                case 2:
+                    System.out.println("Son las " + hora + ":" + min);
+                    break;
+                case 3:
+                    break;
+                default:
+                    System.out.println("Error: opcion incorrecta!");
+                    break;
+            }
+        } while (num != 3);
+    }
+
+
 
 }// end class
