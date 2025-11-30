@@ -1,5 +1,5 @@
 public class main {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws InterruptedException {
         EstructurasDeControl pr = new EstructurasDeControl();
         //pr.pract1();
         //pr.pract2();
@@ -15,6 +15,18 @@ public class main {
         //pr.pract12();
         //pr.pract13();
         //pr.pract14();
-        pr.pract15();
+        //pr.pract15();
+
+        Ciclos p = new Ciclos();
+        //p.prac1();
+        //p.prac2();
+        //p.prac3();
+        //p.prac4();
+        //p.prac5();
+        //p.prac6();
+        //p.prac7();
+        p.prac8();
+        //p.prac9();
+        //p.prac10();
     }
 }
