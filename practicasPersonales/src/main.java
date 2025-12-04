@@ -31,6 +31,11 @@ public class main {
         //p.prac11();
         //p.prac12();
         //p.prac13();
-        p.prac14();
+        //p.prac14();
+
+        ExcepcionesBasica pru = new ExcepcionesBasica();
+        pru.pedirNumeroIndestructible();
+
+
     }
 }
