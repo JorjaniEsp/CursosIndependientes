@@ -32,9 +32,21 @@ public class main {
         //p.prac12();
         //p.prac13();
         //p.prac14();
+        //p.modulo1();
+        //p.piramideInvertida();
+        //p.cuadrado();
+        //p.x();
+        //p.z();
+        //p.tablero();
+        //p.cuadraroPro();
+        //p.trianguloHueco();
+        //p.cruz();
 
         ExcepcionesBasica pru = new ExcepcionesBasica();
-        pru.pedirNumeroIndestructible();
+        //pru.pedirNumeroIndestructible();
+
+        Modulo3 a = new Modulo3();
+        //a.Calculadora();
 
 
     }

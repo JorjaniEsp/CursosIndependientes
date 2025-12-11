@@ -203,4 +203,185 @@ public class Ciclos {
         }
     }// end method
 
+    public void modulo1() {
+        int n;
+        System.out.println("Ingrese un numero: ");
+        n = sc.nextInt();
+
+        for (int i = 1; i <= n; i++) {
+            for (int j = 1; j <= (n-i); j++) {
+                System.out.print(" ");;
+            } // for interno a
+            for (int k = 1; k <= (2*i-1); k++) {
+                System.out.print("*");
+            } // for interno b
+            System.out.println("");
+        }// for externo
+    }// end method
+
+    public void piramideInvertida() {
+        int n = 0;
+        System.out.println("Ingrese el numero: ");
+        n = sc.nextInt();
+        for (int i = 1; i <= n; i++) {
+            for (int j = 1; j <= (n-i); j++) {
+                System.out.print(" ");;
+            } // for interno a
+            for (int k = 1; k <= (2*i-1); k++) {
+                System.out.print("*");
+            } // for interno b
+            System.out.println("");
+        }// for externo
+
+        for (int i = n-1; i >= 1; i--) {
+            for (int j = 1; j <= (n-i) ; j++) {
+                System.out.print(" ");
+            }
+            for (int k = 1; k <= (2*i-1) ; k++) {
+                System.out.print("*");
+            }
+
+            System.out.println();
+        }
+
+        }
+
+        public void cuadrado(){
+            int n;
+            System.out.println("ingrese el numero: ");
+            n = sc.nextInt();
+
+            for (int i = 1; i <= n; i++) {
+                for (int j = 1; j <= n ; j++) {
+                    if (i == 1 || i == n || j == 1 || j == n) {
+                        System.out.print("*");
+                    } else {
+                        System.out.print(" ");
+                    }
+                }
+                System.out.println();
+            }
+        }// end method
+
+    public void x(){
+        int n;
+        System.out.println("Ingrese el valor de n:");
+        n = sc.nextInt();
+
+        for (int i = 1; i <= n; i++) {
+            for (int j = 1; j <= n; j++) {
+
+                if(j == i){
+                    System.out.print("*");
+                } else if( i + j == n + 1) {
+                    System.out.print("*");
+                } else {
+                    System.out.print(" ");
+                }
+            }
+            System.out.println();
+        }
+    }// end method
+
+    public void z(){
+        int n;
+        System.out.println("Ingrese un numero: ");
+        n = sc.nextInt();
+
+        for (int i = 1; i <= n ; i++) {
+            for (int j = 1; j <= n ; j++) {
+                if (i == 1 || i == n){
+                    System.out.print("*");
+                } else if( j + i == n + 1){
+                    System.out.print("*");
+                } else{
+                    System.out.print(" ");
+                }
+            }
+            System.out.println();
+        }
+
+    }
+
+    public void tablero(){
+        int n;
+        System.out.println("Ingrese un numero: ");
+        n = sc.nextInt();
+
+        for (int i = 1; i <= n ; i++) {
+            for (int j = 1; j <= n ; j++) {
+                if ((i + j) % 2 == 0){
+                    System.out.print("*");
+                }else{
+                    System.out.print(" ");
+                }
+
+            }
+            System.out.println();
+        }
+
+    }
+
+    public void cuadraroPro(){
+        int n;
+        System.out.println("Ingrese un numero: ");
+        n = sc.nextInt();
+
+        for (int i = 1; i <= n; i++) {
+            for (int j = 1; j <= n; j++) {
+                if (i == 1 || i == n || j == 1 || j == n){
+                    System.out.print("*");
+                } else if (i == j && i + j == n + 1) {
+                    System.out.print("+");
+                } else{
+                    System.out.print(" ");
+                }
+
+            }
+            System.out.println();
+        }
+
+    }
+
+    public void trianguloHueco() {
+        int n;
+        System.out.println("Ingrese un numero: ");
+        n = sc.nextInt();
+        for (int i = 1; i <= n; i++) {
+
+            for (int j = 1; j <= n; j++) {
+                if (i == j || i == n || j == 1) {
+                    System.out.print("*");
+                } else {
+                    System.out.print(" ");
+                }
+            }
+            System.out.println();
+
+        }
+    }
+
+    public void cruz(){
+        int n;
+        System.out.println("Ingrese n:");
+        n = sc.nextInt();
+
+        int mitad = n / 2 + 1;
+
+        for (int i = 1; i <= n; i++) {
+
+            for (int j = 1; j <= n; j++) {
+                if (i == mitad || j == mitad){
+                System.out.print("*");
+            } else {
+                    System.out.print(" ");
+                }
+            }
+            System.out.println();
+        }
+
+    }
+
+
+
 }// end class
