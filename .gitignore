@@ -56,4 +56,6 @@ Thumbs.db # Windows
 # Archivos docs o pptt
 *.docx
 *.pptx
+*.zip
+
 
