@@ -12,7 +12,7 @@ public class TareaOrdenar2Numeros {
         System.out.println(mayor + "\n" + menor);
 
         /*otra forma
-         * mayor = ( i > j) ? i : j;
+         * mayor = (i > j) ? i : j;
          * menor = (j > i)? j : i;
          */
 
@@ -24,7 +24,7 @@ public class TareaOrdenar2Numeros {
             int i = Integer.parseInt(JOptionPane.showInputDialog(null, "Ingrese un numero"));
             int j = Integer.parseInt(JOptionPane.showInputDialog(null, "Ingrese un numero"));
         } catch (exeption e){
-            sout "eror: el dato ingresado es invalor\nVuelva a intentarlo"
+            sout "eror: el dato ingresado es invalido\nVuelva a intentarlo"
             main(args);
         }
 
