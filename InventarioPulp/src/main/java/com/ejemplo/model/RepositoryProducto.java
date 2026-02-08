@@ -9,6 +9,9 @@ public class RepositoryProducto {
 
     private RepositoryProducto(){
         this.productos = new ArrayList<>();
+
+        productos.add(new Producto(1,"Arroz", 1500,2));
+        productos.add(new Producto(2,"Frijoles", 2500,3));
     }
 
     public static synchronized RepositoryProducto getInstance() {
@@ -30,7 +33,7 @@ public class RepositoryProducto {
             return "No hay productos agregados aun!";
         } else{
             for (Producto producto : productos){
-                lista += "ID: " + producto.getIdProduct() +
+                lista += "\nID: " + producto.getIdProduct() +
                          "\nNombre: " + producto.getNombre() +
                         "\nPrecio: " + producto.getPrecio() +
                         "\nStock: " + producto.getStock() +
