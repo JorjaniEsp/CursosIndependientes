@@ -1,21 +1,24 @@
 package com.ejemplo.controller;
 
-import com.ejemplo.model.Producto;
 import com.ejemplo.model.RepositoryProducto;
+import com.ejemplo.persistencia.PersistenciaProductos;
 import com.ejemplo.view.ViewMain;
 
 public class ControllerMain {
     private RepositoryProducto model;
     private ViewMain vista;
     private boolean running;
+    private PersistenciaProductos datos;
 
     public ControllerMain(RepositoryProducto model, ViewMain vista){
+        this.datos = new PersistenciaProductos();
         this.model = model;
         this.vista = vista;
         this.running = true;
     }
 
     public void iniciarApp(){
+        datos.cargarDatos();
         while (running) {
             int seleccion = vista.mostrarMenu();
             gestorOpciones(seleccion);

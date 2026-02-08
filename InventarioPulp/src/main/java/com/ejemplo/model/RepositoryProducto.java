@@ -1,17 +1,21 @@
 package com.ejemplo.model;
 
+import com.ejemplo.persistencia.PersistenciaProductos;
+
 import java.util.ArrayList;
 import java.util.List;
 
 public class RepositoryProducto {
     private List<Producto> productos;
+    PersistenciaProductos dataBase;
     private static RepositoryProducto instance;
 
     private RepositoryProducto(){
         this.productos = new ArrayList<>();
+        this.dataBase = new PersistenciaProductos();
 
-        productos.add(new Producto(1,"Arroz", 1500,2));
-        productos.add(new Producto(2,"Frijoles", 2500,3));
+//        productos.add(new Producto(1,"Arroz", 1500,2));
+//        productos.add(new Producto(2,"Frijoles", 2500,3));
     }
 
     public static synchronized RepositoryProducto getInstance() {
@@ -24,6 +28,7 @@ public class RepositoryProducto {
     public String agregarProducto(int id, String nombre, double precio, int cant){
         Producto producto = new Producto(id,nombre,precio,cant);
         productos.add(producto);
+        dataBase.guardarProducto(producto);
         return "Agregado exitosamente";
     }
 
