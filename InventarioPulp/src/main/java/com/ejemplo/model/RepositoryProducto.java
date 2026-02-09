@@ -28,8 +28,7 @@ public class RepositoryProducto {
     public String agregarProducto(int id, String nombre, double precio, int cant){
         Producto producto = new Producto(id,nombre,precio,cant);
         productos.add(producto);
-        dataBase.guardarProducto(producto);
-        return "Agregado exitosamente";
+        return producto.toString();
     }
 
     public String verProductos(){
