@@ -14,5 +14,6 @@ public class MainApp{
         ControllerMain controlador = new ControllerMain(modelo, vista, datos);
 
         controlador.iniciarApp();
+
     }
 }
