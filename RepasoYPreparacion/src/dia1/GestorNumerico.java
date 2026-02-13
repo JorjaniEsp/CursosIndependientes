@@ -16,11 +16,7 @@ public class GestorNumerico {
     }
 
     public static boolean esPar(int n){
-        if(n % 2 == 0){
-            return true;
-        } else {
-            return false;
-        }
+        return n % 2 == 0;
     }
 
     public static String formatearString(int n){
