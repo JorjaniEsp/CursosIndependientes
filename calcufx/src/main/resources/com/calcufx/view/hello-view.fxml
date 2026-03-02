@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="280.0" prefWidth="379.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.calcufx.controller.HelloController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+   <children>
+      <Label alignment="TOP_LEFT" contentDisplay="TOP" layoutX="118.0" layoutY="14.0" prefHeight="27.0" prefWidth="129.0" style="-fx-background-color: green;" text="CALCULADORA" textFill="#1138e4">
+         <font>
+            <Font name="Berlin Sans FB Bold" size="18.0" />
+         </font></Label>
+
+       <fx:define>
+           <ToggleGroup fx:id="grupoOperaciones" />
+       </fx:define>
+      <RadioButton fx:id="suma" layoutX="30.0" layoutY="146.0" mnemonicParsing="false" selected="true" text="Suma">
+         </RadioButton>
+      <RadioButton fx:id="resta" layoutX="110.0" layoutY="146.0" mnemonicParsing="false" text="resta">
+      <RadioButton fx:id="mult" layoutX="183.0" layoutY="146.0" mnemonicParsing="false" text="multiplicar" toggleGroup="$grupoOperaciones" />
+      <RadioButton fx:id="div" layoutX="271.0" layoutY="146.0" mnemonicParsing="false" text="dividir" toggleGroup="$grupoOperaciones" />
+      <TextField fx:id="numA" layoutX="93.0" layoutY="57.0" promptText="numero a..." />
+      <TextField fx:id="numB" layoutX="93.0" layoutY="106.0" promptText="numero b..." />
+      <TextField fx:id="respuesta" layoutX="20.0" layoutY="207.0" promptText="Respuesta..." />
+       <Button fx:id="btCal" layoutX="296.0" layoutY="207.0" mnemonicParsing="false" onAction="#calcular" text="Calcular" />
+      <Label alignment="TOP_LEFT" contentDisplay="TOP" layoutX="17.0" layoutY="56.0" prefHeight="27.0" prefWidth="78.0" text="Num 1:">
+         <font>
+            <Font name="Berlin Sans FB Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label alignment="TOP_LEFT" contentDisplay="TOP" layoutX="17.0" layoutY="105.0" prefHeight="27.0" prefWidth="78.0" text="Num 2:">
+         <font>
+            <Font name="Berlin Sans FB Bold" size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
