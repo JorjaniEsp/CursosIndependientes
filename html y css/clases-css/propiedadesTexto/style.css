@@ -1,0 +1,21 @@
+p{
+    color: red;
+    font-family: Jor;
+    font-size: 19px;
+    font-weight: bold;
+    font-style: italic;
+    text-align: left;
+    line-height: 1.5;
+    letter-spacing: 1px;
+    text-transform: none;
+    
+}
+
+h1{
+    text-align: center;
+}
+span{
+    text-decoration: underline;
+    color : blue;
+    text-shadow: 0px 0px 4px #f99;
+}
