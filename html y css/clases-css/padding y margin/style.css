@@ -1,0 +1,21 @@
+.formulario{
+    background : #ff979d;
+    height: 100px;
+    padding: 30px;
+}
+
+.formulario_input{
+    background: #fff0f1;
+    padding: 6px 10px;
+    width:90%;
+    margin: 7px;
+
+}
+
+#button{
+    color : white;
+    background: #f90917;
+    letter-spacing: 2px;
+    text-transform:uppercase;
+    width: 50%
+}

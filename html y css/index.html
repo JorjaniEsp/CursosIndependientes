@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invitación a jugar</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #2c3e50;
+            margin: 0;
+        }
+
+        .contenedor {
+            text-align: center;
+            background-color: #ecf0f1;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            width: 300px;
+        }
+
+        h1 {
+            color: #2c3e50;
+            font-size: 24px;
+            margin-bottom: 30px;
+        }
+
+        .botones {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        button {
+            padding: 10px 25px;
+            font-size: 16px;
+            font-weight: bold;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        #btn-si {
+            background-color: #27ae60;
+            color: white;
+        }
+
+        #btn-si:hover {
+            background-color: #219653;
+        }
+
+        #btn-no {
+            background-color: #e74c3c;
+            color: white;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="contenedor">
+        <h1 id="mensaje">¿Me das tu anillo de atrás?</h1>
+        <div class="botones" id="contenedor-botones">
+            <button id="btn-si">Sí</button>
+            <button id="btn-no">No</button>
+        </div>
+    </div>
+
+    <script>
+        const mensaje = document.getElementById('mensaje');
+        const btnSi = document.getElementById('btn-si');
+        const btnNo = document.getElementById('btn-no');
+        const contenedorBotones = document.getElementById('contenedor-botones');
+
+        // Evento para cambiar el texto y color al pasar el cursor
+        btnNo.addEventListener('mouseenter', () => {
+            btnNo.textContent = 'Sí';
+            btnNo.style.backgroundColor = '#27ae60';
+        });
+
+        // Evento para restaurar el texto y color al quitar el cursor
+        btnNo.addEventListener('mouseleave', () => {
+            btnNo.textContent = 'No';
+            btnNo.style.backgroundColor = '#e74c3c';
+        });
+
+        // Función para cambiar el texto principal y ocultar los botones
+        function confirmarAccion() {
+            mensaje.textContent = 'Yo sabía que tú querías';
+            contenedorBotones.style.display = 'none';
+        }
+
+        // Asignación de la función a ambos botones
+        btnSi.addEventListener('click', confirmarAccion);
+        btnNo.addEventListener('click', confirmarAccion);
+    </script>
+
+</body>
+</html>
