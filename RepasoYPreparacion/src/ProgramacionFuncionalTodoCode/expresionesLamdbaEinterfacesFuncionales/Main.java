@@ -14,9 +14,7 @@ public class Main {
 //        };
 //        lambdaMensaje.emitirMensaje("Juan", 8);
 
-        CondicionEst condicionEst = (int edad) -> {
-            return edad >= 18;
-        };
+        CondicionEst condicionEst = edad -> edad >= 18;
 
         System.out.println(condicionEst.test(19));
 
