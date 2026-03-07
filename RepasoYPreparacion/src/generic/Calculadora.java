@@ -3,9 +3,11 @@ package generic;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Calculadora <K, V extends Number>{
+public class Calculadora <K, V extends Integer>{
+
     private K clave;
     private V value;
+    List<? extends  Number> lista;
 
     public Calculadora(K clave, V value){
         this.clave = clave;
@@ -20,7 +22,7 @@ public class Calculadora <K, V extends Number>{
         System.out.println( clave +" ("+ clave.getClass().getName() +")" + ": " + value +" ("+ value.getClass().getName() +")");
     }
 
-    public static double sumaTotal(List<? extends Number> lista){
+    public static double sumaTotal(List< ? extends Number> lista){
        double total = 0;
         for (Number number : lista) {
             total += number.doubleValue();
